@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"> <!-- leest en ziet karakters -->
+    <title>Formulier</title>
+ </head>
+ <body>
+<header>
+        <h1>Aanmelden</h1>
+        </header>
+     <p>Bent u geïnteresseerd in samenwerken met CMD Amsterdam? Dat kan!
+         Tijdens de opleiding werken studenten aan projecten voor echte opdrachtgevers. 
+         Ook lopen de studenten stage, in het tweede en afstudeerjaar.</p>
+
+        <p><em>CMD Amsterdam zoekt altijd naar positieve verbindingen met de creatieve stad
+            Amsterdam.</em></p>
+
+     <p>Voor het aanmelden van stageplekken of projecten kunt u onderstaand formulier invullen.
+         Wij nemen zo nodig contact met u op nadat het formulier is verstuurd.
+         Voor vragen of opmerkingen kunt u <a href="#">contact</a> met ons opnemen.</p>
+        
+        <main>
+        <form>
+        <!-- De form tag defineert een HTML form voor user input en kan 1 of meer form elementen bevatten -->
+            <fieldset>
+            <!-- wordt gebruikt om groep met gerelateerde elementen in een form te zetten. Ook zorgt de fieldset tag ervoor dat er een kader rondom de geselecteerde elementen wordt getrokken -->
+                <legend>Contact gegevens</legend>
+                <!-- De legend tag defineert een bijschrijft voor de fieldset tag-->
+                <label for="name">Naam</label>
+                <!-- de label tag defineert een label voor een input tag element. toogelt controle voor als de gebruiker bijvoorbeeld met de muis op de tekst/invulvlak klikt-->
+                <input type="text" id="name" required>
+            
+                <label for="bedrijf">Bedrijf</label>
+                <input type="text" id="bedrijf">
+
+                <label for="adres">Adres</label>
+                <input type="text" id="adres">
+
+                <label for="zip">Postcode</label>
+                <input type="text" id="zip" placeholder="1234 AB">
+
+                <label for="plaats">Plaats</label>
+                <input type="text" id="plaats">
+
+                <label for="tel">Telefoon</label>
+                <input type="tel" id="tel">
+
+                <label for="email">Email</label>
+                <input type="email" id="email" required placeholder="example@example.com">
+
+                <h1>Ik wil mij aanmelden voor</h1>
+
+                <input id="project" name="aanmelden" type=radio />
+                <label for="project">voor een project</label>
+
+                <input id="stage" name="aanmelden" type=radio />
+                <label for="stage">voor een stage</label>
+             </fieldset>
+   
+            <fieldset>
+                <legend>Project</legend>
+                <label for="titel">Titel</label>
+                <input type="text" id="titel">
+     
+                <label for="TA1">Opdrachtomschrijving:</label>
+                <textarea rows="7" required cols="30" name="TextArea1" id="TA1"></textarea>
+
+                <label for="TA2">Doelgroepomschrijving:</label>
+                <textarea rows="7" required cols="30" name="TextArea2" id="TA2"></textarea>
+
+                <label for="TA3">Doelstelling / Intentie van project:</label>
+                <textarea rows="7" required cols="30" name="TextArea3" id="TA3"></textarea>
+
+                <label for="looptijd">Looptijd</label>
+                <input type="text" id="looptijd">
+
+                <label for="deadline">Deadline</label>
+                <input type="date" id="deadline">
+
+                <label for="geschiktvoorproject">Geschikt voor</label>
+                <select id="geschiktvoorproject">
+
+                    <option>eerstejaars studenten</option>
+                    <option>tweedejaars studenten</option>
+                    <option>derdejaars studenten</option>
+                    <option>afstudeer studenten</option>
+                    <option>onbekend</option>
+
+                </select>
+
+                <label for="TA4">Opmerking:</label>
+                <textarea rows="7" cols="30" name="TextArea4" id="TA4">
+                </textarea>
+            </fieldset>
+        
+            <fieldset>
+                <legend>Stage</legend>
+         
+                <label for="geschiktvoorstage">Geschikt voor</label>
+                <select id="geschiktvoorstage">
+       
+                    <option>tweedejaars studenten</option>
+                    <option>afstudeer studenten</option>
+                    <option>onbekend</option>
+
+                </select>
+
+                <label for="hoelangisdestage">Hoe lang is de stage</label>
+                <select id="hoelangisdestage">
+
+                    <option>10 weken</option>
+                    <option>20 weken</option>
+
+                </select>
+
+                <label for="begindatum">Begin datum</label>
+                <input type="date" id="begindatum" min="2014-09-15"/>
+
+
+                <label for="TA5">Beschrijving werkzaamheden:</label>
+                <textarea rows="7" required cols="30" name="TextArea5" id="TA5"></textarea>
+            
+                <h1>Beschrijving stagebedrijf</h1>
+
+                <label for="bedrijfsnaam">Bedrijfsnaam</label>
+                <input type="text" id="bedrijfsnaam">
+
+                <label for="adresstage">Adres</label>
+                <input type="text" id="adresstage">
+
+                <label for="postcodestage">Postcode</label>
+                <input type="text" pattern="[1-9][0-9]{3}\s?[a-zA-Z]{2}" id="postcodestage">
+
+                <label for="plaatsstage">Plaats</label>
+                <input type="text" id="plaatsstage">
+
+                <label for="sector">Sector</label>
+                <input type="text" id="sector">
+
+                <label for="corebussiness">Core bussiness</label>
+                <input type="text" id="corebussiness">
+
+                <label for="TA6">Opmerkingen:</label>
+                <textarea rows="7" cols="30" name="TextArea6" id="TA6"></textarea>
+            </fieldset>
+            <input type="submit" value="Verstuur">
+        </form>
+    </main>
+    	<footer>
+			<em>Dorian Ponte, Frontend Development, 2015</em>
+	</footer>
+ </body>
+ </html>
